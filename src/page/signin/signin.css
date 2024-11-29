@@ -1,0 +1,71 @@
+html,
+body,
+#root {
+  height: 100% !important; /* Ensure the html and body take up full height */
+  margin: 0 !important; /* Remove default margin */
+}
+.signin {
+  background-color: #999999;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.signin-title {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ffff;
+  margin-top: 231px;
+  margin-bottom: 224px;
+}
+.signin-input-username {
+  border: none;
+  border-left: 1px solid white;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 8px 16px;
+  margin-right: 12px;
+  background-color: #999999;
+}
+.signin-input-username::placeholder {
+  color: #ffffff;
+}
+.signin-input-username:focus {
+  outline: none;
+}
+.signin-username,
+.signin-password {
+  border-radius: 16px;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signin-password {
+  margin-top: 10px;
+}
+.signin-icon {
+  margin: 5px 16px;
+}
+.signup-button {
+  margin-top: 10px;
+  border-radius: 16px;
+  background-color: #3f51b5; /* Original background color */
+  color: #ffffff; /* Text color */
+  display: flex;
+  font-size: 22px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 351.5px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+.signup-button:active{
+    background-color: #5669e7; /* Darker background color on click */
+}
