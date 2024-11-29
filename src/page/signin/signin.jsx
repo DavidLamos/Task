@@ -60,7 +60,7 @@ const Signin = () => {
           required
         />
       </div>
-      <Link to="/signup" className="signup-button">Sign In</Link>
+      <Link to="/signup" className="signup-button">To Sign Up</Link>
     </div>
   );
 };
