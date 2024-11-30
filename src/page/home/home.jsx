@@ -16,6 +16,9 @@ const Home = () => {
           <li>
             <Link to="/dashboard">Dashboard</Link>
           </li>
+          <li>
+            <Link to="/manage">Server Manage</Link>
+          </li>
         </ul>
       </nav>
     </div>

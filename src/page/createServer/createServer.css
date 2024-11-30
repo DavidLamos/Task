@@ -1,5 +1,5 @@
 .createServer {
-  background-color: #999999;
+  background-color: #424242;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
 .input-servername {
   border: 1px solid white;
   color: white;
-  background-color: #999999;
+  background-color: #424242;
   font-size: 22px;
   border-radius: 16px;
   padding: 16px 24px;
@@ -33,7 +33,17 @@
   width: 299px;
   font-size: 22px;
   margin-top: 10px;
-  margin-right: 80px;
-  margin-left: 80px;
   text-align: center;
+}
+.createServerContainer {
+  background-color: #333333;
+  margin-right: 16px;
+  margin-left: 16px;
+  display: flex;
+  border-radius: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 38px;
+  gap: 16px;
 }

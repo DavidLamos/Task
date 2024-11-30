@@ -5,6 +5,7 @@ import Signin from "./page/signin/signin";
 import Signup from "./page/signup/signup";
 import Dashboard from "./page/dashboard/dashboard";
 import CreateServer from "./page/createServer/createServer";
+import ServerManage from "./page/serverManage/serverManage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/create" element={<CreateServer />} />
+        <Route path="/manage" element={<ServerManage />} />
       </Routes>
     </Router>
   );

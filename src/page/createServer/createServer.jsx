@@ -6,13 +6,15 @@ const CreateServer = () => {
       <div className="navgationBarFix">
         <NavigationBar title="Create Server" />
       </div>
-      <input
-        className="input-servername"
-        type="text"
-        placeholder="Servername"
-        required
-      />
-      <div className="createButton">Create</div>
+      <div className="createServerContainer">
+        <input
+          className="input-servername"
+          type="text"
+          placeholder="Servername"
+          required
+        />
+        <div className="createButton">Create</div>
+      </div>
     </div>
   );
 };
