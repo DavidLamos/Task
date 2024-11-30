@@ -4,6 +4,7 @@ import Home from "./page/home/home";
 import Signin from "./page/signin/signin";
 import Signup from "./page/signup/signup";
 import Dashboard from "./page/dashboard/dashboard";
+import CreateServer from "./page/createServer/createServer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/create" element={<CreateServer />} />
       </Routes>
     </Router>
   );
