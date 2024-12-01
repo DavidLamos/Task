@@ -41,8 +41,12 @@ const NavigationBar = (props) => {
         className="navigationBar-side"
         style={{ left: sidebarShow ? "0px" : "-250px" }}
       >
-        <div className="navigationBar-side-dashboard ">Dashboard</div>
-        <div className="navigationBar-side-chat">Chat</div>
+        <Link to="/dashboard" className="navigationBar-side-dashboard ">
+          Dashboard
+        </Link>
+        <Link to="/chat" className="navigationBar-side-chat">
+          Chat
+        </Link>
         <div className="navigationBar-side-signout">Sign Out</div>
       </div>
     </div>

@@ -1,6 +1,8 @@
 import "./taskItem.css";
 
+
 const TaskItem = (props) => {
+  
   return (
     <div className="taskItem">
       <div className="taskItem-title">{props.title}</div>

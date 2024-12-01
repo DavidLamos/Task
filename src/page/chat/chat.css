@@ -1,0 +1,115 @@
+.chat {
+  background-color: #424242;
+  min-height: 100vh; /* Use vh to ensure it takes full viewport height */
+  min-width: 100%;
+  position: relative; /* Allow absolute positioning of inner elements */
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%; /* Subtract the height of the send message area */
+  margin-bottom: 80px; /* Prevent overlap with the fixed send message area */
+}
+
+.chat-container-chatbody {
+  flex: 1; /* Allow the chat body to take available space */
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-container-chatbody-log {
+  flex: 1; /* Allow the log to take remaining space */
+  overflow-y: auto; /* Enable scrolling for chat log */
+}
+
+.chat-container-chatbody-sendmsg {
+  position: fixed;
+  bottom: 16px; /* Set to 16px to account for the margin */
+  left: 16px; /* Align it to the left */
+  right: 16px; /* Align it to the right */
+  height: 80px;
+  background-color: #333333;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.navgationBarFix {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%; /* Ensure it spans the full width */
+}
+.chat-container-chatbody-sendmsg-input {
+  width: 70%;
+  border-bottom: 1px solid white;
+  margin-right: 8px;
+  padding: 6px;
+  background-color: #999999;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+}
+.chat-container-chatbody-sendmsg-input:focus {
+  outline: none;
+}
+.chat-container-chatbody-sendmsg-send {
+  display: flex;
+  align-items: center;
+  color: #999999;
+  justify-content: center;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  width: 15%;
+}
+.chat-container-chatbody-sendmsg-broadcast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  color: #999999;
+}
+.chat-container-memberlist-button {
+  width: 15px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: rgb(85, 105, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.chat-container-memberlist-list {
+  color: rgb(211, 200, 200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  height: 100%;
+  width: 100%;
+}
+.chat-container-memberlist-list-title {
+  background-color: #3243a1;
+  padding: 4px;
+}
+.chat-container-memberlist-list-content {
+  flex-grow: 1;
+  height: auto;
+  background-color: white;
+}
+.chat-container-memberlist {
+  position: fixed;
+  bottom: 0;
+  width: 100px;
+  min-height: 100%;
+  background-color: #3f51b5;
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  transition: all 0.5s;
+}

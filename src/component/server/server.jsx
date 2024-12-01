@@ -6,7 +6,11 @@ const Server = (props) => {
   const navigate = useNavigate(); // Use useNavigate hook
 
   const handleNavigate = () => {
-    navigate("/manage", { state: { data: dataToPass } }); // Programmatic navigation
+    if (props.flag)
+      navigate("/manage", {
+        state: { data: dataToPass },
+      }); // Programmatic navigation
+    else navigate("/taskmanage", { state: { data: dataToPass } }); // Programmatic navigation
   };
 
   return (

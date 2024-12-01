@@ -9,16 +9,16 @@ const Dashboard = () => {
       <div className="dashboard-main">
         <div className="dashboard-main-created">
           Server Created
-          <Server servername="Ximon's Server" membercount="10" />
-          <Server servername="Ximon's Server" membercount="0" />
-          <Server servername="Ximon's Server" membercount="0" />
-          <Server servername="Ximon's Server" membercount="0" />
-          <Server servername="Ximon's Server" membercount="0" />
+          <Server servername="Ximon's Server" membercount="10" flag={true} />
+          <Server servername="Ximon's Server" membercount="0" flag={true} />
+          <Server servername="Ximon's Server" membercount="0" flag={true} />
+          <Server servername="Ximon's Server" membercount="0" flag={true} />
+          <Server servername="Ximon's Server" membercount="0" flag={true} />
         </div>
         <div className="dashboard-main-created">
           Server Invited
-          <Server servername="Ximon's Server" membercount="0" />
-          <Server servername="Ximon's Server" membercount="0" />
+          <Server servername="Ximon's Server" membercount="0" flag={false} />
+          <Server servername="Ximon's Server" membercount="0" flag={false} />
         </div>
       </div>
     </div>
