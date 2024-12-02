@@ -1,0 +1,83 @@
+.editPage {
+  background-color: #424242;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.editPage-container {
+  background-color: #333333;
+  margin-top: 120px;
+  padding: 16px;
+  gap: 16px;
+  color: white;
+  border-radius: 16px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 80px 160px 100px;
+  grid-template-areas:
+    "editPage-title-label editPage-title-content editPage-title-content"
+    "editPage-create-label editPage-create-content-date editPage-create-content-time"
+    "editPage-deadline-label editPage-deadline-content-date editPage-deadline-content-time"
+    "editPage-status-label comboBox comboBox";
+  font-size: 20px;
+}
+.editPage-title-label {
+  grid-area: editPage-title-label;
+}
+.editPage-title-content {
+  grid-area: editPage-title-content;
+}
+.editPage-create-label {
+  grid-area: editPage-create-label;
+}
+.editPage-create-content-date {
+  grid-area: editPage-create-content-date;
+}
+.editPage-create-content-time {
+  grid-area: editPage-create-content-time;
+}
+.editPage-deadline-label {
+  border-radius: 8px;
+  grid-area: editPage-deadline-label;
+}
+.editPage-deadline-content-date {
+  grid-area: editPage-deadline-content-date;
+}
+.editPage-deadline-content-time {
+  grid-area: editPage-deadline-content-time;
+}
+.editPage-status-label {
+  grid-area: editPage-status-label;
+}
+.comboBox {
+  grid-area: comboBox;
+}
+.editPage-title-content,
+.comboBox,
+.editPage-deadline-content-time,
+.editPage-deadline-content-date,
+.editPage-create-content-time,
+.editPage-create-content-date {
+  border-radius: 8px;
+  height: 60px;
+  padding: 4px;
+  background-color: #999999;
+}
+.option {
+  background-color: #333333;
+  color: white;
+  padding: 100px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.editPage-title-content:focus,
+.comboBox:focus,
+.editPage-deadline-content-time:focus,
+.editPage-deadline-content-date:focus,
+.editPage-create-content-time:focus,
+.editPage-create-content-date:focus {
+  outline: none;
+}

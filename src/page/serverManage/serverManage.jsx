@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import NavigationBar from "../../component/navigationBar/navigationBar";
 import TaskItem from "../../component/taskItem/taskItem";
 
-const ServerManage = (props) => {
+const ServerManage = () => {
   const location = useLocation();
   const data = location.state?.data; // Access the passed data
 
@@ -18,44 +18,22 @@ const ServerManage = (props) => {
           <TaskItem
             title="To do list"
             deadline="2023-09-15"
+            deadlineTime="12:00"
+            createDateTime="12:00"
             createDate="2023-09-10"
-            status="Completed"
+            status="NotCompleted"
             assignee="John Doe"
+            isServer={true}
           />
           <TaskItem
             title="To do list"
             deadline="2023-09-15"
+            deadlineTime="12:00"
+            createDateTime="12:00"
             createDate="2023-09-10"
-            status="Completed"
+            status="NotCompleted"
             assignee="John Doe"
-          />
-          <TaskItem
-            title="To do list"
-            deadline="2023-09-15"
-            createDate="2023-09-10"
-            status="Completed"
-            assignee="John Doe"
-          />
-          <TaskItem
-            title="To do list"
-            deadline="2023-09-15"
-            createDate="2023-09-10"
-            status="Completed"
-            assignee="John Doe"
-          />
-          <TaskItem
-            title="To do list"
-            deadline="2023-09-15"
-            createDate="2023-09-10"
-            status="Completed"
-            assignee="John Doe"
-          />
-          <TaskItem
-            title="To do list"
-            deadline="2023-09-15"
-            createDate="2023-09-10"
-            status="Completed"
-            assignee="John Doe"
+            isServer={true}
           />
         </div>
       </div>

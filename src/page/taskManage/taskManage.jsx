@@ -2,9 +2,25 @@ import "./taskManage.css";
 
 import TaskItem from "../../component/taskItem/taskItem";
 import NavigationBar from "../../component/navigationBar/navigationBar";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const TaskManage = () => {
+  const dataToPass = {
+    title: "",
+    deadline: "",
+    deadlineTime: "",
+    createDate: "",
+    createDateTime: "",
+    status: "",
+    assignee: "",
+    isCreate: true,
+  };
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/edit", {
+      state: { data: dataToPass },
+    });
+  };
   return (
     <div className="taskManage">
       <NavigationBar title="Task Manage" />
@@ -17,49 +33,47 @@ const TaskManage = () => {
           <TaskItem
             title="To do list"
             deadline="2023-09-15"
+            deadlineTime="12:00"
+            createDateTime="12:00"
             createDate="2023-09-10"
-            status="Completed"
+            status="NotCompleted"
             assignee="John Doe"
+            isServer={false}
           />
           <TaskItem
             title="To do list"
             deadline="2023-09-15"
+            deadlineTime="12:00"
+            createDateTime="12:00"
             createDate="2023-09-10"
-            status="Completed"
+            status="NotCompleted"
             assignee="John Doe"
+            isServer={false}
           />
           <TaskItem
             title="To do list"
             deadline="2023-09-15"
+            deadlineTime="12:00"
+            createDateTime="12:00"
             createDate="2023-09-10"
-            status="Completed"
+            status="NotCompleted"
             assignee="John Doe"
+            isServer={false}
           />
           <TaskItem
             title="To do list"
             deadline="2023-09-15"
+            deadlineTime="12:00"
+            createDateTime="12:00"
             createDate="2023-09-10"
-            status="Completed"
+            status="NotCompleted"
             assignee="John Doe"
-          />
-          <TaskItem
-            title="To do list"
-            deadline="2023-09-15"
-            createDate="2023-09-10"
-            status="Completed"
-            assignee="John Doe"
-          />
-          <TaskItem
-            title="To do list"
-            deadline="2023-09-15"
-            createDate="2023-09-10"
-            status="Completed"
-            assignee="John Doe"
+            isServer={false}
           />
         </div>
-        <Link to="/edit" className="taskManage-create">
+        <div className="taskManage-create" onClick={handleNavigate}>
           +
-        </Link>
+        </div>
       </div>
     </div>
   );

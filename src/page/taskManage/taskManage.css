@@ -1,5 +1,6 @@
 .taskManage {
   background-color: #424242;
+  min-height: 100%;
 }
 .taskManage-container {
   display: flex;
@@ -23,5 +24,4 @@
 }
 .taskManage-container-memberlist-member-addmember {
   background-color: #333333;
-  width: 350px;
 }
